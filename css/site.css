@@ -1,0 +1,18 @@
+.container-page{
+    width: 985px;
+    min-height: 550px;
+    margin: auto;
+    padding:10px;
+}
+#slider{
+    margin: auto;
+    margin-top: 70px;
+}
+.footer
+{
+	padding: 10px;
+	margin: 10px 20px;
+	font-size: 9.5px;
+	text-align: center;
+	border-top: 1px solid #C9E0ED;
+}
