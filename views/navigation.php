@@ -7,18 +7,13 @@
 					</a>
 				</li>
 				<li>
-					<a>
+					<a href="/meh-hil/books.php">
 						<span>Buku</span>
 					</a>
 				</li>
 				<li>
-					<a>
+					<a href="/meh-hil/rentalcart.php">
 						<span>Pemesanan</span>
-					</a>
-				</li>
-				<li>
-					<a>
-						<span>Area Member</span>
 					</a>
 				</li>
 				<li>
@@ -26,9 +21,10 @@
 						<span>Tentang Kami</span>
 					</a>
 				</li>
-				<li style="width:100%;text-align:right;padding-right:5px;">
+				<li style="width:100%;text-align:right;padding-right:5px;padding-left:50px;">
 					<div>
-						<input id="searchItem" type="text" placeholder="Cari" style="padding-left:5px;-moz-border-radius: 15px;border-radius: 15px;"/>
+                                            <span style="text-align:right;padding-right:20px;color:#ccc;text-shadow: 0 0 0;">Keranjang Penyewaan: <?php include_once '/cart.php'; ?></span>
+                                            <!--<input id="searchItem" type="text" placeholder="Cari" style="padding-left:5px;margin-left:20px;-moz-border-radius: 15px;border-radius: 15px;"/>-->
 					<div>
 				</li>
 			</ul>

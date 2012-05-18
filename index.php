@@ -3,8 +3,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="/meh-hil/css/site.css" rel="stylesheet" type="css/text"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-	<script src="/meh-hil/javascript/plugin/slides.min.jquery.js"></script>
+        <script src="/meh-hil/javascript/plugin/jquery.min.js"></script>
+        <script src="/meh-hil/javascript/plugin/slides.min.jquery.js"></script>
         <script src="/meh-hil/javascript/site.js"></script>
         <link rel="stylesheet" href="/meh-hil/css/slider.css">
         <title></title>
