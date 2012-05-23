@@ -11,7 +11,7 @@
     </head>
     <body>
         <?php include_once 'views/navigation.php'; ?>
-        <div class="container-page">
+        <div class="container-page" style="background-color:transparent;">
         <div id="slider">
 			<img src="/meh-hil/images/home/new-ribbon.png" width="112" height="112" alt="New Ribbon" id="ribbon">
 			<div id="slides">

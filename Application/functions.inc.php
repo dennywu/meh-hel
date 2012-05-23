@@ -60,24 +60,38 @@ function showCart() {
                         <td>
                             <div class='text-right'>".convertCurr(($amount * $item["qty"])* $item["hari"])."</div>
                         </td>
-                        <td>
+                        <td class='hide'>
                                 <input type='hidden' name='id' value='".$item["id"]."'/>
                                 <div class='text-right'><button type='submit' style='font-size: 9px;'>Update</button></div>
                             
                         </td>
-                        <td>
+                        <td class='hide'>
                             <div class='text-right'><a class='remove' href='/meh-hil/Application/cart.php?action=delete&id=".$item["id"]."' title='Hapus Barang'>X</a></div>
                         </td>
                     </tr></form>";
 			$total += ($amount * $item["qty"] * $item["hari"]);
 		}
 		$output[] = '<tr><td colspan="8"><div class="text-right">Total Akhir : <strong>'.convertCurr($total).'</strong></div></td></tr>';
-                $output[] = '<tr><td colspan="8"><div class="text-right">
+                $output[] = '<tr class="hide"><td colspan="8"><div class="text-right">
                             <button type="submit" id="btncheckout" >CheckOut</button>
                             </div></td></tr>';
 	} else {
 		$output[] = '<tr><td colspan="8" align="center";><p>Keranjang penyewaan anda Kosong.</p></td></tr>';
 	}
 	return join('',$output);
+}
+
+function rentalDetail($db){
+    $items = $_SESSION['cart'];
+    unset($_SESSION['cart']); 
+    foreach ($items as $item) {
+        $sql = 'SELECT * FROM book WHERE id = '.$item["id"];
+	$result = $db->query($sql);
+	$row = $result->fetch();
+	extract($row);
+        
+        $output[] = $name;
+    }   
+    return join('',$output);
 }
 ?>

@@ -4,7 +4,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="/meh-hil/css/site.css" rel="stylesheet" type="css/text"/>
         <link href="/meh-hil/css/rentalCart.css" rel="stylesheet" type="css/text"/>
+        <link href="/meh-hil/css/rentalCartPrint.css" rel="stylesheet" media="print" type="css/text"/>
+        
         <script src="/meh-hil/javascript/plugin/jquery.min.js"></script>
+        <script src="/meh-hil/javascript/plugin/PrintDocument.js"></script>
+        <script src="/meh-hil/javascript/plugin/DateFormat.js"></script>
         <script src="/meh-hil/javascript/rentalCart.js"></script>
         <title></title>
     </head>
@@ -19,8 +23,8 @@
                         <th width="60px" class="text-right">Qty</th>
                         <th width="80px" class="text-right">Lama Sewa</th>
                         <th width="130px" class="text-right">Total</th>
-                        <th width="20px"></th>
-                        <th width="10px"></th>
+                        <th width="20px" class="hide"></th>
+                        <th width="10px" class="hide"></th>
                     </tr>
                 </thead>
                 <tbody>

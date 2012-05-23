@@ -1,7 +1,7 @@
 <div class="inputCustHeader">
     Silahkan isi data pribadi anda dengan benar untuk mempermudah proses penyewaan.
 </div>
-<form action="/meh-hil/Application/checkout.php" method="POST">
+<form id="frmInpuTCust">
 <table id="tblinputCustomer">
     <tr>
         <td>Title</td>
@@ -46,7 +46,7 @@
     <tr>
         <td colspan="2"></td>
         <td>
-            <input type="submit" id="buttonsewa" value="Sewa"/>
+            <input type="button" id="buttonsewa" onclick="Booking()" value="Sewa"/>
         </td>
     </tr>
 </table>
