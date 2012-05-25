@@ -8,7 +8,7 @@ $(document).ready(function(){
 function showCategory(){
     $.ajax({
         type:'GET',
-        url:'/meh-hil/Application/admin/GetAllCategory.php',
+        url:'/meh-hil/Application/admin/getAllCategory.php',
         dataType:'json',
         success:function(result){
             for(var i = 0; i< result.length; i++)
