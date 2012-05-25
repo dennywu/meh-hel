@@ -4,7 +4,7 @@ $(document).ready(function(){
 function showCustomer(){
     $.ajax({
         type:'GET',
-        url:'/meh-hil/Application/admin/GetAllCustomer.php',
+        url:'/meh-hil/Application/admin/getAllCustomer.php',
         dataType:'json',
         success:function(result){
             for(var i = 0; i< result.length; i++)
