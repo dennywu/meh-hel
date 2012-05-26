@@ -35,7 +35,7 @@ function showCart() {
                         
                         <form action='/meh-hil/Application/cart.php?action=update' method='post'>
                         <tr>
-                        <td width='60px'><a><img class='small-product' src='http://www.gramediashop.com/images/preview/9786020026435.jpg'></a></td>
+                        <td width='60px'><a><img class='small-product' src='/meh-hil/images/books/".$image."'></a></td>
                         <td>
                             <div class='detail-product'>
                                 <span class='title-product'>".$name."</span></br>

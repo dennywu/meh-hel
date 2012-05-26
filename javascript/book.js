@@ -30,8 +30,8 @@ function setListBook(books){
     {
         var html="";
         html += "<li>";
-        html += "<a href=''>";
-        html += "<img src='http://www.gramediashop.com/images/preview/9786020026435.jpg'>";
+        html += "<a href='/meh-hil/images/books/"+ books[i].image +"'>";
+        html += "<img src='/meh-hil/images/books/"+ books[i].image +"'>";
         html += "</a>"
         html += "<div class='w320 left'>"
         html += "<span class='c_blue_kompas font16'><strong>"+ books[i].name +"</strong></span><br>";

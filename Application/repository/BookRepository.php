@@ -1,6 +1,6 @@
 <?php
     function getBooks($offset){
-        $qry = "Select * from book where stock > 0 limit 1 offset $offset";
+        $qry = "Select * from book where stock > 0 limit 10 offset $offset";
         $result = mysql_query($qry);
         $books = array();
         while($row = mysql_fetch_array($result)){
@@ -9,7 +9,7 @@
         return $books;
     }
     function getBookByCategory($category,$offset){
-        $qry = "Select * from book where kategori = '$category' and stock > 0 limit 1 offset $offset";
+        $qry = "Select * from book where kategori = '$category' and stock > 0 limit 10 offset $offset";
         $result = mysql_query($qry);
         $books = array();
         while($row = mysql_fetch_array($result)){

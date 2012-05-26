@@ -2,8 +2,8 @@
     function showBook($books){
         for($i=0;$i < count($books); $i++){
             $html[] = "<li>
-                    <a href=''>
-            <img src='http://www.gramediashop.com/images/preview/9786020026435.jpg'>
+            <a href='/meh-hil/images/books/".$books[$i][image]."' target='_blank'>
+            <img src='/meh-hil/images/books/".$books[$i][image]."'>
             </a>
             <div class='w320 left'>
             <span class='c_blue_kompas font16'><strong>".$books[$i]['name']."</strong></span><br>
@@ -24,7 +24,7 @@
     }
     function showPagging($category, $currPage){
         $total = countBook($category);
-        $totalPage = ceil($total / 1);
+        $totalPage = ceil($total / 10);
         $html[] = "<div class='pagination'><ul>";
         if($category ==''){
             $url = "/meh-hil/books.php?";

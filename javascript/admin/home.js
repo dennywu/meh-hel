@@ -41,7 +41,7 @@ function showDetailCallBack(data){
         for(var i =0; i< data.items.length; i++){
             totalDenda += parseFloat(data.items[i].denda);
             $(".tblRentalCart tbody").append("<tr>"+
-                            "<td width='60px'><a><img class='small-product' src='http://www.gramediashop.com/images/preview/9786020026435.jpg'></a></td>"+
+                            "<td width='60px'><a><img class='small-product' src='/meh-hil/images/books/"+ data.items[i].image +"'></a></td>"+
                             "<td>"+
                                 "<div class='detail-product'>"+
                                     "<span class='title-product'>"+data.items[i].name+"</span></br>"+

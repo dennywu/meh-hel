@@ -1,5 +1,5 @@
 <link href="/meh-hil/css/admin/updateBook.css" rel="stylesheet" type="css/text"/>
-<form id="FormEditBook" style="margin:0px;" action="/meh-hil/Application/admin/updateBook.php" method="POST">
+<form id="FormEditBook" style="margin:0px;" action="/meh-hil/Application/admin/addBook.php" method="POST" enctype="multipart/form-data">
   <div class = "DialogEditBook">
     <div class="HeaderDialogBook">
       <div class="HeaderLogoBook"></div>
@@ -10,6 +10,10 @@
         <tr>
             <td>Nama</td>
             <td><input type="text" name="name" id="name"/><input type="hidden" name="id" id="id"/></td>
+        </tr>
+        <tr>
+            <td>Kategory</td>
+            <td><select name="kategori" id="kategori"></select></td>
         </tr>
         <tr>
             <td>Author</td>
@@ -43,7 +47,7 @@
             <td colspan="2">
                 <div style="margin-top:10px; text-align: center;">
                 <p style="font-size:11px">
-                    <input type="button" name="save" value="Ubah" class="UpdateBook"/>
+                    <button type="submit" name="save">Tambah</button>
 		<span id="batalArea">
                     atau
                     <span id="CancelEditBook" onclick="closeDialogEdit()">Batal</span>

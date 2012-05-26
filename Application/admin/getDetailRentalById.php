@@ -14,7 +14,7 @@
     
     $qrydetail = "SELECT 
 				case when (DATEDIFF(now(), d.returndate) * qty * 2000)  < 0 then 0 else (DATEDIFF(now(), d.returndate) * qty * 2000) end as denda,
-				r.total,d.qty, d.term, d.total, b.name,b.author, b.publisher, b.published, b.amount as hargasatuan  
+				r.total,d.qty, d.term, d.total, b.name,b.author, b.publisher, b.published, b.image, b.amount as hargasatuan  
                   from rental r inner join rentaldetail d on (r.id = d.rentalid) inner join book b on (d.bookid = b.id) 
                   where r.id = '$id'";
     $resultDetail = mysql_query($qrydetail);
