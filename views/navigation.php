@@ -17,7 +17,7 @@
 					</a>
 				</li>
 				<li>
-					<a>
+					<a href="/meh-hil/aboutus.php">
 						<span>Tentang Kami</span>
 					</a>
 				</li>
