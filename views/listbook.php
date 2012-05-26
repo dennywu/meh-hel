@@ -6,7 +6,7 @@
             <img src='/meh-hil/images/books/".$books[$i][image]."'>
             </a>
             <div class='w320 left'>
-            <span class='c_blue_kompas font16'><strong>".$books[$i]['name']."</strong></span><br>
+            <span class='c_blue_kompas font16'><strong><a href='/meh-hil/detailbook.php?id=".$books[$i][id]."'>".$books[$i]['name']."</a></strong></span><br>
             <span class='font11 c_abu font11'>".$books[$i]['author']."</span><br><br>
             <span class='font11 c_abu font12'>".$books[$i]['publisher']."</span><br>
             <span class='font11 c_abu font12'>Published <strong>".formatDate($books[$i]['published'])."</strong></span>

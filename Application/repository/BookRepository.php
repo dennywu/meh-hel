@@ -8,6 +8,15 @@
         }
         return $books;
     }
+    function getBookById($id){
+        $qry = "SELECT *, (select name from kategori where id = book.kategori) as kategoriname FROM book where id = '$id'";
+        $result = mysql_query($qry);
+        $book;
+        while($row = mysql_fetch_array($result)){
+            $book = $row;
+        }
+        return $book;
+    }
     function getBookByCategory($category,$offset){
         $qry = "Select * from book where kategori = '$category' and stock > 0 limit 10 offset $offset";
         $result = mysql_query($qry);
