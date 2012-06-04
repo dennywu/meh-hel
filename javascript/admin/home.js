@@ -91,7 +91,7 @@ function showDetailCallBack(data){
                                     "Pembayaran dilakukan pada saat pengambilan buku sewaan.<br/><br/>"+
                                     "Untuk informasi lebih lanjut, hubungi : <br/>"+
                                     "Telp : XXXXXXXXXXXXX <br/>"+
-                                    "<strong>Meh-hil Nagoya Center</strong>"+
+                                    "<strong>Mei-hil Nagoya Center</strong>"+
                                     "</div>"+
                                     "</td></tr>");
         $(".tblRentalCart").append("<tr class='print'><td colspan='8'>"+

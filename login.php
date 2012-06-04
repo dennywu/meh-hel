@@ -12,7 +12,7 @@
         <form action="/meh-hil/Application/admin/login.php" method="POST">
         <table>
             <tr>
-                <td colspan="2">Login Meh-Hil</td>
+                <td colspan="2">Login Mei-Hil</td>
             </tr>
             <tr>
                 <td>Username</td>

@@ -12,7 +12,7 @@
         <?php include_once 'views/navigation.php'; ?>
         <div class="container-page">
             <div class="containaboutus" style='width: 700px;margin: 30px auto;'>
-                <strong>Alamat Meh-Hil:</strong><br/><br/>
+                <strong>Alamat Mei-Hil:</strong><br/><br/>
 
                 Kantor Pusat: JL. Topaz Raya C2 No.12 Nagoya, Batam.<br/>
                 Layanan Bantuan: Telepon: 0778-21904, 0778-21920 Fax: 0778-21925<br/>
