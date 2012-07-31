@@ -63,21 +63,27 @@
     }
     
     function insertCustomer(){
-        $name = $_POST["name"];
-        $title = $_POST["title"];
-        $address = $_POST["address"];
-        $city = $_POST["city"];
-        $state = $_POST["state"];
-        $telp = $_POST["telp"];
-        $email = $_POST["email"];
-        $id = uniqid();
-        
-        $qrycust = "INSERT INTO customer (id, title, name, address, city, state,telp, email) 
-                    values ('$id' ,'$title', '$name', '$address', '$city', '$state', '$telp', '$email')";
-        $result = mysql_query($qrycust);
-        if($result)
-            return $id;
-        return null;
+		if($_POST["id"] == null || $_POST["id"] == ""){
+			$id = uniqid();
+			$name = $_POST["name"];
+			$title = $_POST["title"];
+			$address = $_POST["address"];
+			$city = $_POST["city"];
+			$state = $_POST["state"];
+			$telp = $_POST["telp"];
+			$email = $_POST["email"];
+			
+			
+			$qrycust = "INSERT INTO customer (id, title, name, address, city, state,telp, email) 
+						values ('$id' ,'$title', '$name', '$address', '$city', '$state', '$telp', '$email')";
+			$result = mysql_query($qrycust);
+			if($result)
+				return $id;
+		}
+		else
+		{
+			return $_POST["id"];
+		}
     }
     function total(){
         global $db;
